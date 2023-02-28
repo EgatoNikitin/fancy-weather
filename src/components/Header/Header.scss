@@ -1,0 +1,48 @@
+@import '/src/utils/reset.scss';
+@import '/src/utils/colors.scss';
+@import '/src/utils/mixins.scss';
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700;800;900&display=swap');
+
+* {
+    font-size: 14px;
+    box-sizing: border-box;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 600;
+    line-height: 17.07px;
+    font-style: normal;
+    user-select: none;
+}
+
+.header {
+    @include row;
+    justify-content: space-between;
+    align-items: center;
+    padding: 3% 10%;
+    color: $text;
+
+    .button {
+        @include center;
+        cursor: pointer;
+        height: 44px;
+        min-width: 44px;
+        background-color: $button_active;
+        border-radius: 5px;
+    }
+
+    .controllers {
+        @include row;
+        
+        .unactive {
+            @include button_unactive
+        }
+
+        .fah {
+            border-radius: 5px 0 0 5px;
+        }
+
+        .cel {
+            border-radius: 0 5px 5px 0;
+        }
+    }
+
+}

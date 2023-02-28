@@ -1,0 +1,15 @@
+  @mixin center {
+    display: flex;
+    align-items: center;
+    justify-content: center
+  }
+
+  @mixin row {
+    display: flex;
+    flex-direction: row;
+  }
+
+  @mixin button_unactive {
+    background-color: rgba(76, 82, 85, 0.4);
+    color: rgba(255, 255, 255, 0.4);
+  }
