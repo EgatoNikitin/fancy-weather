@@ -1,0 +1,18 @@
+@import '/src/utils/mixins.scss';
+.select--button{
+    margin-right: 10px;
+    width: 71px;
+    height: 44px;
+    background: rgba(174, 181, 185, 0.5);
+    border-radius: 5px;
+    text-align: center;
+    @include center;
+    cursor: pointer;
+    &:hover{
+        background: rgba(202, 210, 214, 0.5);
+        transition: all 0.3s;
+    }
+    .select--button-item{
+        padding-top: 10px;
+    }
+}

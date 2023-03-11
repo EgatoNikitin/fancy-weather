@@ -14,10 +14,12 @@
 }
 
 .header {
+    width: 1254px;
+    margin: 0 auto;
+    padding-top: 40px;
     @include row;
     justify-content: space-between;
     align-items: center;
-    padding: 3% 10%;
     color: $text;
 
     .button {
@@ -38,10 +40,16 @@
 
         .fah {
             border-radius: 5px 0 0 5px;
+            &:hover{ 
+                background-color: rgba(99, 108, 112, 0.4);
+            }
         }
 
         .cel {
             border-radius: 0 5px 5px 0;
+            &:hover{ 
+                background-color:  rgba(193, 201, 206, 0.5)
+            }
         }
     }
 

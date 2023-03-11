@@ -1,0 +1,57 @@
+@import '/src/utils/reset.scss';
+@import '/src/utils/colors.scss';
+@import '/src/utils/mixins.scss';
+
+.main--content{
+    width: 1254px;
+    margin: 0 auto;
+    .main--content-wrapper{
+        display: flex;
+        .left--content{
+            width: 625px;
+            h1{
+                color: #fff;
+                font-weight: 700;
+                font-size: 44px;
+            }
+            .data--wrapper{
+                width: 276px;
+                @include center;
+                justify-content: space-between;
+                .data--wrapper-item{
+                    color: #fff;
+                    font-size: 24px;
+                }
+            }
+            .big-number{
+                width: 597px;
+                display: flex;
+                .temp--number{
+                    width: 500px;
+                    height: 500px;
+                        font-size: 306px;
+                        color: #fff;
+                }
+                .big-cloud{
+                    position: absolute;
+                    width: 163px;
+                    height: 103px;
+                }
+                .info--list{
+                    width: 175px;
+                    height: 137px;
+                    li{
+                        color: #fff;
+                        list-style: none;
+                    }
+                }
+            }
+            .small--Number-wrapper{
+                display: flex;
+            }
+        }
+        .right--content{
+            width: 625px;
+        }
+    }
+}
