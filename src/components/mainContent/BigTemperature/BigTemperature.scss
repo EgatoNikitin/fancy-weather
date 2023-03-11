@@ -1,0 +1,33 @@
+@import '/src/utils/colors.scss';
+@import '/src/utils/mixins.scss';
+@import '/src/utils/reset.scss';
+
+.big-number{
+    position: relative;
+    display: flex;
+    height: 400px;
+    align-items: flex-end;
+    .temp--number{
+            height: 100%;
+            @include center;
+            font-size: 306px;
+            color: $text;
+    }
+    .big-cloud{
+        top: 0;
+        right: 10%;
+        position: absolute;
+        width: 163px;
+        height: 103px;
+    }
+    .info--list{
+        width: 175px;
+        height: 137px;
+        li{
+            font-size: 22px;
+            height: 35px;
+            color: $text;
+            list-style: none;
+        }
+    }
+}
