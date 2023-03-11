@@ -5,6 +5,7 @@
 .main--content{
     width: 1254px;
     margin: 0 auto;
+    margin-top: 57px;
     .main--content-wrapper{
         display: flex;
         .left--content{
@@ -22,32 +23,6 @@
                     color: #fff;
                     font-size: 24px;
                 }
-            }
-            .big-number{
-                width: 597px;
-                display: flex;
-                .temp--number{
-                    width: 500px;
-                    height: 500px;
-                        font-size: 306px;
-                        color: #fff;
-                }
-                .big-cloud{
-                    position: absolute;
-                    width: 163px;
-                    height: 103px;
-                }
-                .info--list{
-                    width: 175px;
-                    height: 137px;
-                    li{
-                        color: #fff;
-                        list-style: none;
-                    }
-                }
-            }
-            .small--Number-wrapper{
-                display: flex;
             }
         }
         .right--content{
