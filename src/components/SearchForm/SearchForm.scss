@@ -1,0 +1,36 @@
+@import '/src/utils/reset.scss';
+@import '/src/utils/colors.scss';
+@import '/src/utils/mixins.scss';
+
+form {
+    @include row;
+    position: relative;
+
+    input {
+        padding: 10px;
+        @include button_unactive;
+        border: 1px solid rgba(228, 227, 227, 0.2);
+        border-radius: 5px 0 0 5px;
+        width: 274px;
+
+        &::placeholder {
+            color: $text;
+            font-weight: 300;
+        }
+    }
+
+    span {
+        content: url('../../assets/img/voice.svg');
+        position: absolute;
+        right: 30%;
+        top: 30%;
+    }
+
+    .search {
+        width: 101px;
+        border-radius: 0 5px 5px 0 !important;
+            &:hover{ 
+                background-color:  rgba(193, 201, 206, 0.5)
+            }
+    }
+}
