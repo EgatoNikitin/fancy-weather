@@ -1,6 +1,7 @@
 import { BigTemperature } from "./BigTemperature/BigTemperature"
 import { SmallTemperature } from "./SmallTemperature/SmallTemperature"
 import { MapBox } from "./MapBox/MapBox"
+import { MapBox2 } from "./MapBox/MapBox2"
 
 import React, { FC } from 'react';
 
@@ -26,7 +27,9 @@ export const MainContent: FC = () => {
 
                 <div className='right--content'>
                     <MapBox />
+                    <MapBox2 />
                 </div>
+
             </div>
         </div>
     );
